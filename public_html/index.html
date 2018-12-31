@@ -1,0 +1,84 @@
+<!--
+M. Madian Wibiansyah(5180411435)
+Internet connection suggested
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tugas Desain Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Tugas Desain Web</h1>
+            </div>
+            <ul class="navbar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>Nama depan</th>
+                        <th>Nama belakang</th>
+                        <th>Umur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Dany</td>
+                        <td>Saputra</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Paidjo</td>
+                        <td>Sutarjo</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Suprianto</td>
+                        <td> </td>
+                        <td>28</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="myBtn">Click Here to see more</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-body">
+              <span class="close">&times;</span>
+              <p>There's nothing here</p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+            var modal = document.getElementById('myModal');
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0]; 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+            <div class="footer">
+            <p>Created by<a href="#">Madian</a></p>
+            </div>
+        </div>
+    </body>
+</html>
+            
